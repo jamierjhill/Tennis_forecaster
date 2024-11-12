@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Weather Forecast</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f8ff; }
+        h1, h2 { color: #2c3e50; }
+        .forecast { margin-top: 20px; padding: 20px; background-color: #e6f7ff; display: inline-block; }
+    </style>
+</head>
+<body>
+    <h1>Weather Forecast for Tennis</h1>
+    <div class="forecast">
+        <h2>{{ forecast.description }} at {{ forecast.time }}</h2>
+        <p>Temperature: {{ forecast.temperature }}°C</p>
+        <p>Wind Speed: {{ forecast.wind_speed }} m/s</p>
+        <p>Rain Forecast: {% if forecast.rain_forecast %}Yes{% else %}No{% endif %}</p>
+        <h3>{{ synopsis }}</h3>
+        <p>Score: {{ score }}/100</p>
+    </div>
+    <a href="/">Back to Home</a>
+</body>
+</html>

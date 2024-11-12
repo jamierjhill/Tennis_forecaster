@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2 style="color: #4CAF50;">🎾 Your 5 day tennis weather forecast 🎾</h2>
+        <p>Here is your detailed tennis weather forecast:</p>
+        <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th>Date 📅</th>
+                    <th>Period 🕰️</th>
+                    <th>Avg Temp (°C) 🌡️</th>
+                    <th>Max Wind Speed (mph) 💨</th>
+                    <th>Rain 🌧️</th>
+                    <th>Synopsis 📝</th>
+                    <th>Score 🎯</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{content_rows}}
+            </tbody>
+        </table>
+        <h3>🏅 {{best_day_recommendation}} 🏅</h3>
+    </body>
+</html>
